@@ -45,7 +45,7 @@ def dbscan_clustering(location_history, eps, min_samples) :
 
 def plot_clusters(lat, lng, zoom, map_type, long, lati):
     gmap_options = GMapOptions(lat = lat, lng = lng, map_type = map_type, zoom = zoom)
-    p = gmap("AIzaSyAB40FfjoLqTHLVWLHUeYysIlJlTg8gbEI", gmap_options,
+    p = gmap("GOOGLE_API", gmap_options,
              title = 'Beijing congestion points', width = 800, height = 800, tools = ['hover', 'reset', 'wheel_zoom', 'pan'])
     p.circle(long, lati, size = 5, alpha = 0.5, color = "red")
     
